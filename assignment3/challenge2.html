@@ -1,0 +1,52 @@
+<!-- Challenge: Password Validator (Do-While Loop)
+Objective: Create a password validator program that allows the user to set a password and then prompts them to confirm it.
+
+Instructions:
+Prompt the user to set a password.
+Prompt the user to re-enter the password for confirmation.
+If the passwords do not match, ask the user to re-enter the password.
+Continue asking the user to confirm their password until it matches the original one.
+Use a do-while loop to ensure the program requests confirmation at least once.
+Hints:
+Use prompt() to ask the user to set and re-enter the password.
+Use a do-while loop to keep asking until the passwords match.
+You can compare the two passwords using the === operator. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator</title>
+
+    <script> 
+        function PasswordValidator() {
+            let password;
+            let ConfirmPassword;
+            // do-while loop to ensure at least one prompt
+            do {
+                // Prompt user to set a password
+                password = prompt("Please set your password:");
+                
+                // Prompt user to confirm the password
+                ConfirmPassword = prompt("Please re-enter your password for confirmation:");
+                
+                if (password !== ConfirmPassword) {
+                    alert("Passwords do not match. Please try again.");
+                }
+            } while (password !== ConfirmPassword); 
+
+            // If the passwords match
+            alert("Password confirmed successfully!");
+        }
+        // Call the function to execute the password validation
+        window.onload = function() {
+            PasswordValidator();
+        };
+    </script>
+</head>
+<body>
+    <h1>Password validator program</h1>
+    <p>This page will prompt you to set the password and re-enter the password for confirmation.</p>
+</body>
+</html>
