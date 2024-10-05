@@ -15,7 +15,11 @@ The **Movie Watchlist Application** is a simple web application that allows user
 
 ## Getting Started
 
-To run the application locally, follow these steps:
+To run this project locally, follow these steps:
+
+1. **Clone the repository in the terminal**:
+   ```bash
+   git clone https://github.com/SoklyHour/Sokly_INF651.git
 
 ### Prerequisites
 - **Live Server extension**: Make sure to install the **Live Server** extension in Visual Studio Code.
