@@ -1,0 +1,66 @@
+ In this challenge, you will build an interactive form that responds to click events, mouse events, and keyboard events. 
+ Your task is to create a form that accepts a user’s name, tracks mouse movements inside a designated area, 
+ and handles form submissions via both mouse click and the "Enter" key.
+
+ Implement the following functionality using JavaScript:
+
+Click Event: 
+
+When the "Submit" button is clicked, display a welcome message inside outputDiv that says "Welcome, [name]!" (where [name] is the user’s input). 
+Change the background color of outputDiv to green when the button is clicked. 
+If no name is entered, show an error message in red saying "Error: Please enter a name."
+
+Mouse Event: 
+
+Track the mouse movements inside the mouseTracker area. 
+Display the mouse’s X and Y coordinates in real-time inside the coordinates div.
+
+Keyboard Event: 
+
+When the user types into the input field and presses the "Enter" key, trigger the submit button automatically without needing to click it. 
+Prevent submission if the input field is empty.
+
+Expected Outcome:
+
+After clicking the "Submit" button (or pressing "Enter"), a welcome message is displayed if the user entered a name, and the background color changes to green. 
+If the input field is empty, an error message in red should appear.
+
+The X and Y coordinates of the mouse should be updated and displayed as the user moves their mouse inside the mouseTracker area.
+The form should b
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Form Challenge</title>
+  <style>
+    #mouseTracker {
+      width: 300px;
+      height: 300px;
+      border: 2px solid black;
+      margin-bottom: 20px;
+    }
+    #outputDiv {
+      margin-top: 20px;
+      padding: 10px;
+      border: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Interactive Form</h1>
+  
+  <label for="nameInput">Enter your name:</label>
+  <input type="text" id="nameInput" placeholder="Type your name here">
+  <button id="submitButton">Submit</button>
+
+  <div id="outputDiv"></div>
+
+  <div id="mouseTracker"></div>
+  <div id="coordinates">Mouse Coordinates: X: 0, Y: 0</div>
+
+  <script src="main.js"></script>
+</body>
+</html>
