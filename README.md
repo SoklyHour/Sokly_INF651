@@ -10,7 +10,7 @@ This project is an interactive web application that demonstrates various JavaScr
   - Add items to the cart and see the total cost update automatically.
 
 - **Checkout**
-- Proceed to a checkout section with the option to review the cart, enter shipping details, and calculate total prices.
+  - Proceed to a checkout section with the option to review the cart, enter shipping details, and calculate total prices.
   
 - **Real-Time Form Validation**
   - Validate form fields such as email and phone number upon user input.
