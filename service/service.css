@@ -1,0 +1,265 @@
+/* Main Section */
+main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#page-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#page-title h1 {
+    font-size: 32px;
+    color: #1b8310;
+    font-weight: 600;
+}
+
+#page-title p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #4CAF50; /* Green line under the title */
+    padding-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+form button {
+    background-color: #f57c00;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #e65100;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #fafafa;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.testimonial {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+/* FAQ Section */
+#faq {
+    background-color: #fafafa;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+#faq h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px; /* Space for the arrow */
+    border-bottom: 1px solid #4CAF50; /* Green line under the title */
+}
+
+#faq h3:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+#faq p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    display: none; /* Hide answers by default */
+    padding-left: 20px;
+}
+
+#faq .arrow {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+#faq h3.active .arrow {
+    transform: rotate(90deg); /* Rotate the arrow when question is clicked */
+}
+
+/* Hover effect for the questions */
+#faq h3:hover .arrow {
+    color: #4CAF50; /* Change arrow color when hovered */
+}
+
+/* Footer Section */
+footer {
+    background-color: #557c5d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-logo a {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 0 15px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+    color: #f39c12;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.footer-social a:hover {
+    color: #f39c12;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Page Title */
+    #page-title h1 {
+        font-size: 28px;
+    }
+
+    /* Section Headings */
+    section h2 {
+        font-size: 24px;
+    }
+
+    /* About Section */
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+        margin-bottom: 20px;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .footer-social a {
+        margin: 0 15px;
+    }
+
+    /* Form Adjustments */
+    form input,
+    form select,
+    form textarea {
+        font-size: 14px;
+    }
+}

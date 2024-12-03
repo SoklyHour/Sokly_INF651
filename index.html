@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SoklyPhone Shop offers a wide range of smartphones, tablets, and accessories. Explore the best deals on top tech products.">
+  <meta name="keywords" content="smartphones, tablets, iPhone, Android, phone accessories">
+  <title>SoklyPhone Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Poppins font family from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+  <!-- Box Icons -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav__logo">SoklyPhone</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link ">About</a></li>
+          <li class="nav__item"><a href="service.html" class="nav__link">Service</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Slideshow Section -->
+  <div class="slideshow-container" style="margin-top: 40px;">
+    <div class="mySlides fade">
+      <img src="images/slideshow1.png" style="width:100%; height:500px; object-fit: cover;">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/Slideshow2.png" style="width:100%; height:500px; object-fit: cover;">
+    </div>
+    <div class="mySlides fade">
+      <img src="images/slideshow3.png" style="width:100%; height:500px; object-fit: cover;">
+    </div>
+  </div>
+
+  <!-- Slideshow Navigation Dots -->
+  <div style="text-align: center;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <!-- Popular Products Section -->
+  <div class="small-container">
+    <h2 class="title">Buy Now & Add To Cart Below</h2>
+    <section class="content-section container" id="product-list">
+      <div class="row">
+        <!-- Product Item  -->
+        <div class="shop-item col-4" data-name="iPhone 13 Pro Max">
+          <span class="shop-item-title">iPhone 13 Pro Max</span>
+          <img class="shop-item-image" src="Images/iphone13pro.png" alt="iPhone 13 Pro Max" data-price="1099">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$1099</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- Product Item  -->
+        <div class="shop-item col-4">
+          <span class="shop-item-title">iPhone 13 Pro</span>
+          <img class="shop-item-image" src="Images/iphone13pro6.1.png" alt="iPhone 13 Pro" data-price="999">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$999</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- Product Item  -->
+        <div class="shop-item col-4">
+          <span class="shop-item-title">iPhone 16</span>
+          <img class="shop-item-image" src="Images/iphone16.png" alt="iPhone 16" data-price="999">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$999</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- Product Item  -->
+        <div class="shop-item col-4">
+          <span class="shop-item-title">iPad</span>
+          <img class="shop-item-image" src="Images/ipad.png" alt="iPad" data-price="329">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$329</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Product Item  -->
+        <div class="shop-item col-4">
+          <span class="shop-item-title">iPad Pro 11"</span>
+          <img class="shop-item-image" src="Images/ipadpro11new.jpeg" alt="iPad Pro 11" data-price="799">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$799</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- Product Item  -->
+        <div class="shop-item col-4">
+          <span class="shop-item-title">iPad Pro 12.9"</span>
+          <img class="shop-item-image" style="background-size: contain" src="Images/ipadpro12.9.jpeg" alt="iPad Pro 12.9" data-price="1099">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$1099</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- Product Item  -->
+        <div class="shop-item col-4">
+          <span class="shop-item-title">iPad mini</span>
+          <img class="shop-item-image" src="Images/ipadmini.png" alt="iPad mini" data-price="499">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$499</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- Product Item  -->
+        <div class="shop-item col-4">
+          <span class="shop-item-title">iPad Air</span>
+          <img class="shop-item-image" src="Images/ipadair.png" alt="iPad Air" data-price="599">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$599</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Product Item  -->
+        <div class="shop-item col-4">
+          <span class="shop-item-title">Apple Watch Series 7</span>
+          <img class="shop-item-image" src="Images/series7.jpeg" alt="Apple Watch Series 7" data-price="799">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$799</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- Product Item  -->
+        <div class="shop-item col-4">
+          <span class="shop-item-title">Apple Watch SE</span>
+          <img class="shop-item-image" src="Images/watchse.jpeg" alt="Apple Watch SE" data-price="399">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$399</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+         <!-- Product Item  -->
+         <div class="shop-item col-4">
+          <span class="shop-item-title">Iphone 16 pro max</span>
+          <img class="shop-item-image" src="Images/iphone16promax.png" alt="Apple Watch SE" data-price="1299">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$1299</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+         <!-- Product Item  -->
+         <div class="shop-item col-4">
+          <span class="shop-item-title">Iphone 15 pro max</span>
+          <img class="shop-item-image" src="Images/iphone15promax.png" alt="Apple Watch SE" data-price="1099">
+          <div class="shop-item-details">
+            <span class="shop-item-price">$1099</span>
+            <button class="btn shop-button" style="background-color: black; border: none;" type="button">ADD TO CART</button>
+          </div>
+        </div>
+  
+
+    <!-- Shopping Cart Section -->
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <!-- Cart Header: Labels for Item, Price, and Quantity -->
+            <span class="cart-item cart-header column">ITEM</span>
+            <span class="cart-price cart-header column">IN</span>
+            <span class="cart-quantity cart-header column">CART</span>
+        </div>
+        <!-- Free shipping notice -->
+        <div><p>Get free same day shipping by ordering it now</p></div>
+        
+        <!-- Cart Items: List of added items (initially empty) -->
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+
+        <!-- Cart Total: Displays the total price -->
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+
+        <!-- Purchase Button -->
+
+    <button class="btn button btn-purchase" style="background-color: black; border: none" type="button" id="purchase-button">PURCHASE</button>
+    <!-- Notification -->
+  <div id="notification" class="notification">
+    Purchase Successful!
+  </div>
+
+
+    </section>
+</div>
+
+<!-- Checkout Section -->
+<section class="container content-section" id="checkout-section" style="display: none;">
+  <h2 class="section-header">Checkout</h2>
+  
+  <div class="checkout-details">
+      <h3>Shipping Information</h3>
+      
+      <!-- Shipping Form -->
+      <form id="shipping-form">
+          <div class="form-row">
+              <label for="shipping-name">Full Name</label>
+              <input type="text" id="shipping-name" name="shipping-name" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-row">
+              <label for="shipping-address">Shipping Address</label>
+              <input type="text" id="shipping-address" name="shipping-address" placeholder="Enter your address" required />
+          </div>
+          <div class="form-row">
+              <label for="shipping-city">City</label>
+              <input type="text" id="shipping-city" name="shipping-city" placeholder="Enter your city" required />
+          </div>
+          <div class="form-row">
+              <label for="shipping-postalcode">Postal Code</label>
+              <input type="text" id="shipping-postalcode" name="shipping-postalcode" placeholder="Enter your postal code" required />
+          </div>
+          
+          <div class="form-row">
+              <label for="shipping-country">Country</label>
+              <input type="text" id="shipping-country" name="shipping-country" placeholder="Enter your country" required />
+          </div>
+      </form>
+  </div>
+
+  <div class="checkout-summary">
+      <h3>Order Summary</h3>
+      
+      <!-- Order Summary Table -->
+      <div class="checkout-items">
+          <div class="cart-row">
+              <span class="cart-item cart-header column">ITEM</span>
+              <span class="cart-price cart-header column">PRICE</span>
+              <span class="cart-quantity cart-header column">QUANTITY</span>
+          </div>
+          <div id="order-summary">
+              <!-- Dynamic order summary will be populated here -->
+          </div>
+      </div>
+
+      <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span id="order-total-price" class="cart-total-price">$0</span>
+      </div>
+
+      <button class="btn button btn-confirm-purchase" style="background-color: black; border: none" type="button" id="confirm-purchase-button">Confirm Purchase</button>
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <a href="#">SoklyPhone</a>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js" ></script>
+  <script src="menu.js" ></script>
+</body>
+
+</html>
