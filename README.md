@@ -6,16 +6,16 @@ This project is an interactive web application that demonstrates various JavaScr
 
 ## Features
 
-- **Interactive Shopping Cart:**
+- **Interactive Shopping Cart**
   - Add items to the cart and see the total cost update automatically.
 
 - **Checkout**
 - Proceed to a checkout section with the option to review the cart, enter shipping details, and calculate total prices.
   
-- **Real-Time Form Validation:**
+- **Real-Time Form Validation**
   - Validate form fields such as email and phone number upon user input.
   
-- **Dynamic Content:**
+- **Dynamic Content**
   - Reveal and hide content or sections based on user actions (e.g., click to reveal more information).
 
 ## Pages
